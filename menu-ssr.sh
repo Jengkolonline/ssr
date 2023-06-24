@@ -33,15 +33,15 @@ echo -e " [\e[36m•1\e[0m] Create Account SHADOWSOKS R "
 #echo -e " [\e[36m•2\e[0m] Trial Account XRAY Vless "
 echo -e " [\e[36m•2\e[0m] Extending Account SHADOWSOKS R "
 echo -e " [\e[36m•3\e[0m] Delete Account SHADOWSOKS R "
-echo -e " [\e[36m•5\e[0m] Menu SHADOWSOKS R Plugin "
+echo -e " [\e[36m•4\e[0m] Menu SHADOWSOKS R Plugin "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;100;33m       • SHADOWSOKS R Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•4\e[0m] Install SHADOWSOKS R "
-echo -e " [\e[36m•5\e[0m] Stop SHADOWSOKS R "
-echo -e " [\e[36m•5\e[0m] Start SHADOWSOKS R "
+echo -e " [\e[36m•5\e[0m] Install SHADOWSOKS R "
+echo -e " [\e[36m•6\e[0m] Stop SHADOWSOKS R "
+echo -e " [\e[36m•7\e[0m] Start SHADOWSOKS R "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -57,9 +57,10 @@ case $opt in
 1) clear ; addwg ; exit ;;
 2) clear ; renewwg ; exit ;;
 3) clear ; delwg ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
-5) systemctl stop wg-quick@wg0.service ; exit ;;
-6) systemctl start wg-quick@wg0.service ; exit ;;
+4) clear ; ssrmu ; exit ;;
+5) wget https://raw.githubusercontent.com/Jengkolonline/ssr/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh ; exit ;;
+6) /etc/init.d/ssrmu stop ; exit ;;
+7) /etc/init.d/ssrmu start ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
