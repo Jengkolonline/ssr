@@ -40,8 +40,8 @@ echo -e "\E[0;100;33m       • SHADOWSOKS R Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[36m•5\e[0m] Install SHADOWSOKS R "
-echo -e " [\e[36m•6\e[0m] Stop SHADOWSOKS R "
-echo -e " [\e[36m•7\e[0m] Start SHADOWSOKS R "
+#echo -e " [\e[36m•6\e[0m] Stop SHADOWSOKS R "
+#echo -e " [\e[36m•7\e[0m] Start SHADOWSOKS R "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -58,9 +58,9 @@ case $opt in
 2) clear ; renewwg ; exit ;;
 3) clear ; delwg ; exit ;;
 4) clear ; ssrmu ; exit ;;
-5) wget https://raw.githubusercontent.com/Jengkolonline/ssr/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh ; exit ;;
-6) /etc/init.d/ssrmu stop ; exit ;;
-7) /etc/init.d/ssrmu start ; exit ;;
+5) clear ; wget https://raw.githubusercontent.com/Jengkolonline/ssr/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh ; exit ;;
+#10) clear ; /etc/init.d/ssrmu stop ; exit ;;
+#10) clear ; /etc/init.d/ssrmu start ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
